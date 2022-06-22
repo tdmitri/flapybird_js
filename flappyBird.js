@@ -41,7 +41,7 @@ scor.src = "sounds/score.mp3";
 document.addEventListener("keydown", moveUp);
 
 function moveUp() {
-    bY -= 25;
+    bY -= 30;
     fly.play();
 }
 
@@ -71,7 +71,7 @@ function draw() {
 
         if (pipe[i].x == 125) {
             pipe.push({
-                x: cvs.width,
+                x: cvs.width+20,
                 y: Math.floor(Math.random() * pipeNorth.height) - pipeNorth.height
             });
         }
